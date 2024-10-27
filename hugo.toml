@@ -1,3 +1,27 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseurl = "https://terminal.seiichiyonezawa.com/"
+languageCode = "ja"
+theme = "terminal"
+paginate = 5
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  contentTypeName = "posts"
+  showMenuItems = 2
+  fullWidthTheme = false
+  centerTheme = false
+
+[logo]
+  logoText = "Terminal"
+  logoHomeLink = "/"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about"
+  [[menu.main]]
+    identifier = "showcase"
+    name = "Showcase"
+    url = "/showcase"
